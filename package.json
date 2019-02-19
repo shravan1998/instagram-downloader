@@ -1,0 +1,22 @@
+{
+  "name": "instagram-downloader",
+  "version": "1.0.0",
+  "description": "Making an instagram downloader using Node JS with Cheerio library by scraping the links",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shravan1998/instagram-downloader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shravan1998/instagram-downloader/issues"
+  },
+  "homepage": "https://github.com/shravan1998/instagram-downloader#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
