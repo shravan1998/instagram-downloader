@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-//const crawler =  require("");
+const crawler =  require("crawler");
 const bodyParser = require("body-parser");
 let insta_video = require("./routes/insta_video");
 let insta_image = require("./routes/insta_image");
@@ -12,9 +12,11 @@ app.use(bodyParser.urlencoded({
 app.use(function(req,res,next){
     res.header("Access-Control-Allow-Origin","*");
     res.header("Access-Control-Allow-Headers","Origin,X-Requested-With,Content-Type,Accept");
+    next();
 });
 app.get('/',function(req,res){
     res.send("Ready When You Are");
+   
 });
 app.get('/instagram/video',insta_video);
 app.get('/instagram/image',insta_image);
